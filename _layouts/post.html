@@ -5,10 +5,26 @@ layout: default
 <article class="post">
   <header class="postHeader">
     <h1 class="postTitle">{{ page.title }}</h1>
+
     <time class="postDate" datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: "%d.%m.%Y" }}
+      {{ page.date | date: "%m.%d %Y" }}
     </time>
+
+    {% if page.author %}
+      <span class="postAuthor" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">{{ page.author | escape }}</span>
+      </span>
+    {% endif %}
+
+    {% if page.tags %}
+      <p class="postTags">
+        {% for tag in page.tags %}
+          <span class="postTag">{{ tag }}</span>
+        {% endfor %}
+      </p>
+    {% endif %}
   </header>
+
   <div class="postContent">
     {{ content }}
   </div>
