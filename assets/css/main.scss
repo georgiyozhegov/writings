@@ -1,0 +1,36 @@
+.post {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.postHeader {
+  margin-bottom: 2rem;
+}
+
+.postTitle {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.postDate {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.postContent {
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.postContent p {
+  margin: 0 0 1.1rem;
+}
+
+.postContent h2,
+.postContent h3 {
+  margin: 2rem 0 1rem;
+  line-height: 1.2;
+}
