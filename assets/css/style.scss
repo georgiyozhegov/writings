@@ -90,3 +90,92 @@ body {
   height: auto;
   display: block;
 }
+
+.home {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.homeHeader {
+  margin-bottom: 2rem;
+}
+
+.homeTitle {
+  margin: 0 0 0.75rem;
+  font-size: 2.5rem;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.homeDescription {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1em;
+}
+
+.homePosts {
+  display: flex;
+  flex-direction: column;
+}
+
+.homePost {
+  padding: 0.95rem 0;
+}
+
+.homePost + .homePost {
+  border-top: 1px solid color-mix(in srgb, var(--muted) 25%, transparent);
+}
+
+.homePostTitle {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.1em;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.homePostMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: baseline;
+  font-family: "Geist Mono", monospace;
+  font-size: 0.72em;
+  color: var(--muted);
+}
+
+.homePostTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.homePostTag {
+  padding: 0.12rem 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--muted) 40%, transparent);
+  border-radius: 999px;
+}
+
+.homeContacts {
+  margin: 0.75rem 0 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: "Geist Mono", monospace;
+  font-size: 0.72em;
+  color: var(--muted);
+}
+
+.socialTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--muted) 40%, transparent);
+  border-radius: 999px;
+  color: inherit;
+  text-decoration: none;
+}
