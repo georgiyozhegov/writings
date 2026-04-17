@@ -72,6 +72,9 @@ body {
 .postContent p {
   margin: 0 0 1.1em;
   font-size: 1em;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .postContent h1,
