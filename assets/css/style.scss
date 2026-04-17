@@ -3,11 +3,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap");
 
+@import "code";
+
 :root {
   --bg: #fbf8f2;
   --text: #1f1c17;
   --muted: #6a645b;
-  --max-width: 48rem;
 }
 
 html {
@@ -22,10 +23,22 @@ body {
   line-height: 1.6;
 }
 
-.post {
-  max-width: var(--max-width);
+.post,
+.home {
+  width: 100%;
+  max-width: 80ch;
   margin: 0 auto;
   padding: 4rem 1.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .post,
+  .home {
+    max-width: none;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 .postHeader {
@@ -89,15 +102,10 @@ body {
 }
 
 .postContent img {
-  max-width: 100%;
-  height: auto;
   display: block;
-}
-
-.home {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 4rem 1.5rem;
+  width: 100%;
+  height: auto;
+  margin: 1.2rem auto;
 }
 
 .homeHeader {
@@ -190,4 +198,16 @@ body {
 .postHomeTag {
   color: inherit;
   text-decoration: none;
+}
+
+.postContent code,
+.postContent pre {
+  font-size: 0.8em;
+  line-height: inherit;
+}
+
+.postContent pre {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
