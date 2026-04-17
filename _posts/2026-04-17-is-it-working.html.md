@@ -22,7 +22,7 @@ fn main() {
 	let mut kv = HashMap::new();
 	kv.insert("Работает?", "Да");
 	kv.insert("Хорошо работает?", "Очень хорошо");
-	println1!("{kv:#?}");
+	println!("{kv:#?}");
 }
 ```
 
