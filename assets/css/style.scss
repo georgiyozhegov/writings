@@ -212,3 +212,9 @@ body {
   overflow-x: auto;
   overflow-y: hidden;
 }
+
+.postContent .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
