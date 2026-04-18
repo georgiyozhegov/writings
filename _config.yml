@@ -1,0 +1,4 @@
+timezone: Europe/Samara
+markdown: kramdown
+kramdown:
+  math_engine: null
